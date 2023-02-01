@@ -1,0 +1,99 @@
+#sv1 {
+  position: absolute;
+  z-index: 10;
+  top: 23px;
+  left: 412px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv2top {
+  position: absolute;
+  z-index: 10;
+  top: 134px;
+  left: 412px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv5top {
+  position: absolute;
+  top: 508px;
+  left: 337px;
+  width: 25px;
+}
+#sv4top {
+  position: absolute;
+  top: 543px;
+  left: 308px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv7top {
+  position: absolute;
+  top: 623px;
+  left: 306px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv1top{position:absolute;z-index:10;top:23px;left:412px;width:25px;transform:rotate(90deg)}#sv2{position:absolute;z-index:10;top:134px;left:412px;width:25px;transform:rotate(90deg)}#sv5top{position:absolute;top:508px;left:337px;width:25px}#sv4top{position:absolute;top:543px;left:308px;width:25px;transform:rotate(90deg)}#sv7top{position:absolute;top:623px;left:306px;width:25px;transform:rotate(90deg)}#sv3top{position:absolute;top:543px;left:674px;width:25px;transform:rotate(90deg)}#sv6top{position:absolute;top:621px;left:674px;width:25px;transform:rotate(90deg)}#sv8top{position:absolute;top:594px;left:345px;width:25px}#sv5bottom{position:absolute;top:747px;left:317px;width:25px}#sv4bottom{position:absolute;top:786px;left:289px;width:25px;transform:rotate(90deg)}#sv7bottom{position:absolute;top:866px;left:289px;width:25px;transform:rotate(90deg)}#sv3bottom{position:absolute;top:788px;left:613px;width:25px;transform:rotate(90deg)}#sv6bottom{position:absolute;top:866px;left:613px;width:25px;transform:rotate(90deg)}#sv8bottom{position:absolute;top:833px;left:326px;width:25px}
+#sv3top {
+  position: absolute;
+  top: 543px;
+  left: 674px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv6top {
+  position: absolute;
+  top: 621px;
+  left: 674px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv8top {
+  position: absolute;
+  top: 594px;
+  left: 345px;
+  width: 25px;
+}
+
+#sv5bottom {
+  position: absolute;
+  top: 747px;
+  left: 317px;
+  width: 25px;
+}
+#sv4bottom {
+  position: absolute;
+  top: 786px;
+  left: 289px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv7bottom {
+  position: absolute;
+  top: 866px;
+  left: 289px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+
+#sv3bottom {
+  position: absolute;
+  top: 788px;
+  left: 613px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv6bottom {
+  position: absolute;
+  top: 866px;
+  left: 613px;
+  width: 25px;
+  transform: rotate(90deg);
+}
+#sv8bottom {
+  position: absolute;
+  top: 833px;
+  left: 326px;
+  width: 25px;
+}

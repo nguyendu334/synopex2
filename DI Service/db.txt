@@ -1,0 +1,146 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "Connect": {
+        "Client1": true,
+        "Client2": true,
+        "Client3": true,
+        "Client4": true,
+        "Client5": true
+      },
+      "DataLine1RoEDI": {
+        "_LT01_H_ON": true,
+        "_LT01_H_ST": true,
+        "_MX105": false,
+        "_MX106": false,
+        "_MX107": false,
+        "_MX108": false,
+        "_CARBON_FILTER_1": false,
+        "_WATER_SOFTENER_1": false,
+        "_MX111": false,
+        "_LP1": false,
+        "_RO_PRESSURE_PUMP_1": false,
+        "_MX114": true,
+        "_MX115": false,
+        "_CARBON_FILTER_2": false,
+        "_WATER_SOFTENER_2": false,
+        "_MX118": false,
+        "_RO_PRESSURE_PUMP_3": false,
+        "_MX120": false,
+        "_MX121": true,
+        "_RO_PRESSURE_PUMP_2": false,
+        "_MX123": true,
+        "_MX124": false,
+        "_MX125": false,
+        "_MX126": true,
+        "_MX127": true,
+        "_UV_SYSTEM_1": true,
+        "_EDI_WATER_PUMP_1": true,
+        "_EDI_WATER_PUMP_2": false,
+        "_EDI_SYSTEM_1_A_B": true,
+        "_PS1": false,
+        "_MX133": false,
+        "_MX134": false,
+        "_MX135": true,
+        "_MX136": false,
+        "_UV_SYSTEM_2": false,
+        "_EDI_SYSTEM_2_A_B": false,
+        "_EDI_WATER_PUMP_3": false,
+        "_PS2": false,
+        "_MX141": true,
+        "_MX142": false,
+        "_MX143": false,
+        "_MX144": false,
+        "_MX145": false,
+        "_MX146": false,
+        "_LP2": false,
+        "_MX148": false,
+        "_MX149": false,
+        "_MX150": false,
+        "_MX151": false,
+        "_MX152": false,
+        "_MX153": false,
+        "_MX154": false
+      },
+      "dataValveLine1": {
+        "sv1": false,
+        "sv2": false,
+        "sv3": true,
+        "sv4": true,
+        "sv5": false,
+        "sv6": false,
+        "sv7": false,
+        "sv8": false
+      },
+      "dataLineRO2": {
+        "Pump_A_Raw_Water": false,
+        "Pump_C_Raw_Water": false,
+        "Pump_B_Raw_Water": false,
+        "Pump_A_RO_HP": false,
+        "Pump_C_RO_HP": false,
+        "Pump_B_RO_HP": false,
+        "Pump_A_RO_Product": true,
+        "Pump_B_RO_Product": false,
+        "cacbon_A": false,
+        "softener_A": false,
+        "cacbon_B": false,
+        "softener_B": false,
+        "PS_1_Low": true,
+        "PS_2_Low": true,
+        "PS_1_High": false,
+        "PS_2_High": false
+      },
+      "dataMenterLine2": {
+        "cond5": 5.92,
+        "cond6": 16.88,
+        "cond7": 235.08771929824562,
+        "cond8": 249.12280701754386
+      },
+      "dataMenterline1": {
+        "cond1": 264.25,
+        "cond2": 225.155,
+        "cond3": 6.216,
+        "cond4": 6.088,
+        "res1": 0.751,
+        "res2": 9.813,
+        "flow1": 8.2935,
+        "flow2": 10.6005
+      },
+      "dataRawwaterTank": {
+        "Level": 68.60983276367188
+      },
+      "dataPump": {
+        "RawPumpA": true,
+        "RawPumpC": false,
+        "RawPumpB": false
+      },
+      "dataROTank": {
+        "Level": 801
+      },
+      "dataEDIline1": {
+        "pump2": false,
+        "pump3": true,
+        "UV": true,
+        "EDI1": true,
+        "EDI2": true,
+        "EDI3": true
+      },
+      "Resistivity": {
+        "ResDI1": 17.054794311523438,
+        "ResDI2": 17.38812828063965,
+        "ResDI3": 16.168949127197266
+      },
+      "giayLine3_30": 48,
+      "giayLine4_30": 30,
+      "giayLine1_30": 2,
+      "giayLine2_30": 30,
+      "phutLine3_30": 8,
+      "phutLine4_30": 7,
+      "phutLine1_30": 6,
+      "phutLine2_30": 6
+    }
+  ]
+}

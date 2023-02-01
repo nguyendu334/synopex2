@@ -1,0 +1,25 @@
+#path3763,#path831{
+    fill:#ff0f00;
+    fill-opacity:1;
+    stroke:#ff0000;
+    stroke-width:1.44895;
+    stroke-linecap:square;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-dashoffset:50;
+    animation: a 1s infinite linear;
+}
+
+@keyframes a {
+    0% {
+        opacity: 0;
+
+    } 
+    50% {       
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}

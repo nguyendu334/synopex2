@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+        Hieunv
+        SDT: 098.298.68.34
+        Email: tamdaitu.hsdb@gmail.com,
+    -->
+
+<head>
+    <title>FIRE ALARM MONITORING SYSTEM</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name='viewport' content='width=device-width,user-scalable=0' />
+    <meta property="og:image" content="images/monitoring.ico" />
+    <link rel="shortcut icon" type="images/x-icon" href="images/monitoring.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toggeled.css">
+    <link rel="stylesheet" href="css/barprocess.css">
+    <link rel="stylesheet" href="css/Led.css">
+
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:#faf7e1;margin: 0;">
+
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li class="mt">
+                    <a href="index.html">
+                        <i class="fa fa-dashboard"> Trang chủ</i></a>
+                    <a href="historians.html " target="_blank"> <i class="fa fa-history" aria-hidden="true"> Live
+                            Data</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <div id="container">
+
+        <header id="tieude">
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            </div>
+            <a href="index.html" class="logo"><b>Syno<span>pex</span></b></a>
+            <img id="loa" src="images/onvolumn.png" width=50 height=50 style="scale: 100%;margin-top: 0px">
+            <audio id="myAudio" loop>
+                <source src="audio/canhbao.mp3" type="audio/mpeg">
+            </audio>
+            <p id="myTime"></p>
+            <b>FIRE ALARM CENTER MONITORING WEB SYSTEM</b>
+        </header>
+        <!-- <img src="images/image10.png" style="position:absolute;width: 150px;z-index: 50;"> -->
+
+        <!-- <div class="slidecontainer">
+            <input id="dk" style="position:absolute; left:850px; top:70px;" type="range" min="0" max="10000" value="500"
+                class="slider" id="myRange" onchange="onhieunv()">
+        </div> -->
+
+        <!-- Tầng 2 -->
+        <div id="tang2">
+            <div style="position:absolute;width: 60%;left:500px;top:57px">
+                <table cellpadding="0" cellspacing="0" id="table" class="center1" border="0"
+                    style="border-width:0px;empty-cells:show;width:100%;">
+
+                </table>
+            </div>
+            <HMI-PICTURE style="position:absolute; left:-3px; top:72px;" width="1478" height="300" value=false
+                OnPic="images/floor2.png" OffPic="images/floor2.png"> </HMI-PICTURE>
+                <!-- Borber -->
+                <HMI-PICTURE id="anhBoderzone2-1" style="position:absolute; left:-3px; top:72px;" width="1478" height="300" value=false
+                OnPic="images/anhBoderzone2-1.png" OffPic="images/anhBoderzone2-1.png"> </HMI-PICTURE>
+                <HMI-PICTURE id="anhBoderzone2-2" style="position:absolute; left:-3px; top:72px;" width="1478" height="300" value=false
+                OnPic="images/anhBoderzone2-2.png" OffPic="images/anhBoderzone2-1.png"> </HMI-PICTURE>
+                <HMI-PICTURE id="anhBoderzone2-3" style="position:absolute; left:-3px; top:72px;" width="1478" height="300" value=false
+                OnPic="images/anhBoderzone2-3.png" OffPic="images/anhBoderzone2-1.png"> </HMI-PICTURE>
+                <HMI-PICTURE id="anhBoderzone2-4" style="position:absolute; left:-3px; top:72px;" width="1478" height="300" value=false
+                OnPic="images/anhBoderzone2-4.png" OffPic="images/anhBoderzone2-1.png"> </HMI-PICTURE>
+                <HMI-PICTURE id="anhBoderzone2-5" style="position:absolute; left:-3px; top:72px;" width="1478" height="300" value=false
+                OnPic="images/anhBoderzone2-5.png" OffPic="images/anhBoderzone2-1.png"> </HMI-PICTURE>
+            <!-- Room Name tang2 -->
+            <span style="position:absolute; left:154px; top:93px; background-color: white; color: blue;">Kitchen
+                Room
+            </span>
+            <h3 style="position:absolute; left:142px; top:223px; background-color: white; ">ZONE 2-1</h3>
+            <h3 style="position:absolute; left:312px; top:83px; background-color: white; ">ZONE 2-2</h3>
+            <h3 style="position:absolute; left:552px; top:120px; background-color: white; ">ZONE 2-4</h3>
+            <h3 style="position:absolute; left:552px; top:213px; background-color: white; ">ZONE 2-3</h3>
+            <h3 style="position:absolute; left:712px; top:191px; background-color: white; ">ZONE 2-5</h3>
+
+            <p style="color: blue; position: absolute; left:230px; top:175px; background-color: white;">CANTEEN </p>
+            <p style="color: blue; position:absolute; left:402px; top:213px; background-color: white; font-size: 80%; ">
+                Locker
+            </p>
+            <p style="color: blue;position:absolute; left:401px; top:133px; background-color: white; font-size: 80%;">
+                Locker
+            </p>
+
+            <p style="color: blue;position:absolute; left:502px; top:73px; background-color: white; font-size: 80%;">
+                2nd
+                floor
+                corridor </p>
+            <p style="color: blue;position:absolute; left:522px; top:93px; background-color: white; font-size: 80%;">
+                FINAL
+            </p>
+
+            <p style="color: blue;position:absolute; left:562px; top:153px; background-color: white; font-size: 80%;">
+                Parking
+            </p>
+
+            <p style="color: blue;position:absolute; left:702px; top:153px; background-color: white; font-size: 80%;">
+                OQC
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 743px; top: 239px; background-color: white; font-size: 80%;">
+                Training </p>
+            <p
+                style="color: blue; position: absolute; left: 780px; top: 165px; background-color: white; font-size: 80%;">
+                IT
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 777px; top: 117px; background-color: white; font-size: 80%;">
+                PBA
+            </p>
+            <p style="color: blue;position:absolute; left:512px; top:203px; background-color: white; font-size: 80%;">
+                PBA
+            </p>
+            <!-- LED tang2 -->
+            <HMI-LED id="zone2-30" style="position:absolute; left:160px; top:203px; " width="40 " height="40 "
+                value="true " Oncolor="images/firegif.gif " Offcolor="black "></HMI-LED>
+            <img id="zone2-30-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:105px; top:101px;  display: none;">
+
+            <HMI-LED id="zone2-31" style="position:absolute; left:264px; top:81px;" width="40 " height="40 "
+                value="true " Oncolor="images/firegif.gif " Offcolor="black "></HMI-LED>
+            <img id="zone2-31-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:205px; top:-10px;  display: none;">
+
+            <HMI-LED id="zone2-32" style="position:absolute; left:577px; top:188px;" width="40 " height="40 "
+                value="true " Oncolor="images/firegif.gif " Offcolor="black "></HMI-LED>
+            <img id="zone2-32-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:525px; top:90px;  display: none;">
+
+            <HMI-LED id="zone2-33" style="position:absolute; left:577px; top:99px; " width="40 " height="40 "
+                value="true " Oncolor="images/firegif.gif " Offcolor="black "></HMI-LED>
+            <img id="zone2-33-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:525px; top:0px;  display: none;">
+
+            <HMI-LED id="zone2-34" style="position:absolute;  left:732px; top:159px; " width="40 " height="40 "
+                value="true " Oncolor="images/firegif.gif " Offcolor="black "></HMI-LED>
+            <img id="zone2-34-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:684px; top:60px; display: none; ">
+            <!-- Bảng  SPINKLER tầng 2-->
+            <h1
+                style="position:absolute; font-size: 100%; background-color: gainsboro; color: #2f8fc7; width: 420px; height: 129px;left:887px; top:97px; ">
+                <b><u>SPINKLER WATER PRESSURE</u></b>
+            </h1>
+
+            <h2 style="position:absolute;left: 893px;top: 125px;width: 182px;height: 40px;"><b>VÁCH TƯỜNG</b></h2>
+            <h2 style="position:absolute; left:1260px; top:123px;  width: 182px; height: 40px; color: #2f8fc7;">
+                <b>bar</b>
+            </h2>
+
+            <HMI-DISPLAY id="vachtuong" style="position:absolute;left:1080px; top:129px; " width="150px" height="50px"
+                value="20.1" Textcolor="gold" BackColor="black" Font=" Digital-7 " FontSize="250% ">
+            </HMI-DISPLAY>
+            <h2 style="position:absolute; left:894px; top:180px;  width: 182px; height: 40px; "><b>SPINKLER</b></h2>
+            <h2 style="position:absolute; left:1260px; top:180px;  width: 182px; height: 40px; color: #2f8fc7;">
+                <b>bar</b>
+            </h2>
+
+            <HMI-DISPLAY id="spinkler" style="position:absolute;left:1080px; top:186px; " width="150px" height="50px"
+                value="20.1" Textcolor="gold" BackColor="black" Font=" Digital-7 " FontSize="250% ">
+            </HMI-DISPLAY>
+        </div>
+        <!-- Right tang2 -->
+        <div id="zoneRightTop">
+            <HMI-BUTTON id="btonTop31" style="position:absolute" width="77px" height="28px" value=false Ontext="ZONE01"
+                Oncolor="red" Offtext="ZONE 01" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop32" style="position:absolute;left:0px; top:32px;" width="77px" height="28px"
+                value=false Ontext="ZONE02" Oncolor="red" Offtext="ZONE 02" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop33" style="position:absolute;left:0px; top:63px;" width="77px" height="28px"
+                value=false Ontext="ZONE03" Oncolor="red" Offtext="ZONE 03" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop34" style="position:absolute;left:0px; top:94px;" width="77px" height="28px"
+                value=false Ontext="ZONE04" Oncolor="red" Offtext="ZONE 04" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop35" style="position:absolute;left:0px; top:124px;" width="77px" height="28px"
+                value=false Ontext="ZONE 05" Oncolor="red" Offtext="ZONE 05" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop36" style="position:absolute;left:0px; top:154px;" width="77px" height="28px"
+                value=false Ontext="ZONE 06" Oncolor="red" Offtext="ZONE 06" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop37" style="position:absolute;left:0px; top:184px;" width="77px" height="28px"
+                value=false Ontext="ZONE 07" Oncolor="red" Offtext="ZONE 07" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop38" style="position:absolute;left:0px; top:214px;" width="77px" height="28px"
+                value=false Ontext="ZONE 08" Oncolor="red" Offtext="ZONE 08" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop39" style="position:absolute;left:0px; top:245px;" width="77px" height="28px"
+                value=false Ontext="ZONE 09" Oncolor="red" Offtext="ZONE 09" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop40" style="position:absolute;left:0px; top:275px;" width="77px" height="28px"
+                value=false Ontext="ZONE 10" Oncolor="red" Offtext="ZONE 10" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+
+            <HMI-BUTTON id="btonTop41" style="position:absolute;left: 80px;" width="77px" height="28px" value=false
+                Ontext="ZONE 11" Oncolor="red" Offtext="ZONE 11" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop42" style="position:absolute;left:80px; top:32px;" width="77px" height="28px"
+                value=false Ontext="ZONE 12" Oncolor="red" Offtext="ZONE 12" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop43" style="position:absolute;left:80px; top:63px;" width="77px" height="28px"
+                value=false Ontext="ZONE 13" Oncolor="red" Offtext="ZONE 13" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop44" style="position:absolute;left:80px; top:94px;" width="77px" height="28px"
+                value=false Ontext="ZONE 14" Oncolor="red" Offtext="ZONE 14" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop45" style="position:absolute;left:80px; top:124px;" width="77px" height="28px"
+                value=false Ontext="ZONE 15" Oncolor="red" Offtext="ZONE 15" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop46" style="position:absolute;left:80px; top:154px;" width="77px" height="28px"
+                value=false Ontext="ZONE 16" Oncolor="red" Offtext="ZONE 16" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop47" style="position:absolute;left:80px; top:184px;" width="77px" height="28px"
+                value=false Ontext="ZONE 17" Oncolor="red" Offtext="ZONE 17" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop48" style="position:absolute;left:80px; top:214px;" width="77px" height="28px"
+                value=false Ontext="ZONE 18" Oncolor="red" Offtext="ZONE 18" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop49" style="position:absolute;left:80px; top:245px;" width="77px" height="28px"
+                value=false Ontext="ZONE 19" Oncolor="red" Offtext="ZONE 19" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="btonTop50" style="position:absolute;left:80px; top:275px;" width="77px" height="28px"
+                value=false Ontext="ZONE 20" Oncolor="red" Offtext="ZONE 20" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <img id="tuTang22" src="images/tutang22.png">
+        </div>
+        <!-- Tầng 1 -->
+        <div id="tang1">
+            <HMI-PICTURE style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+                OnPic="images/floor11.png" OffPic="images/floor11.png"> </HMI-PICTURE>
+            <!-- boder -->
+            <HMI-PICTURE id="boderzone1" style="position:absolute; left:-25px;top:312px; border: red 5px " width="1495" height="687" value=false
+            OnPic="images/boderzone1.png" OffPic="images/boderzone1.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone2" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone1.png" OffPic="images/boderzone1.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone3" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone1.png" OffPic="images/boderzone1.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone4" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone1.png" OffPic="images/boderzone1.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone5" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone5.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone6" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone6.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone7" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone7.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone8" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone8.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone9" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone9.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone10" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone10.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone11" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone11.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone12" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone12.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone13" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone13.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone14" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone14.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone15" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone15.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone16" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone16.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone17" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone17.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone18" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone18.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone19" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone19.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone20" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone20.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone21" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone21.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone22" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone22.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone23" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone23.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <HMI-PICTURE id="boderzone24" style="position:absolute; left:-25px;top:312px" width="1495" height="687" value=false
+            OnPic="images/boderzone24.png" OffPic="images/boderzone5.png"> </HMI-PICTURE>
+            <!-- Cuatudong -->
+
+            <img id="Canhcuatudong1" src="images/mo cua.png" alt="">
+            <iframe id="Muiten1" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong2" src="images/mo cua.png" alt="">
+            <iframe id="Muiten2" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong3" src="images/mo cua.png" alt="">
+            <iframe id="Muiten3" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong4" src="images/mo cua.png" alt="">
+                <iframe id="Muiten4" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong5" src="images/mo cua.png" alt="">
+                <iframe id="Muiten5" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong6" src="images/mo cua.png" alt="">
+                <iframe id="Muiten6" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong7" src="images/mo cua.png" alt="">
+                <iframe id="Muiten7" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong8" src="images/mo cua.png" alt="">
+                <iframe id="Muiten8" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong9" src="images/mo cua.png" alt="">
+                <iframe id="Muiten9" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong10" src="images/mo cua.png" alt="">
+                <iframe id="Muiten10" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <img id="Canhcuatudong11" src="images/mo cua.png" alt="">
+                <iframe id="Muiten11" src="svg/drawing.svg" frameborder="0" style="height: 100%; width:100%;scale: 3%;"></iframe>
+            <!-- Room Name -->
+            <p style="color: blue; position: absolute; left: 365px; top: 391px; background-color: white;font-size:12px">
+                Garage
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 98px; top: 569px; background-color: white; font-size: 12px">
+                Press
+                Room </p>
+            <p
+                style="color: blue; position: absolute; left: 248px; top: 520px; background-color: white; font-size: 12px">
+                Warehouse </p>
+            <p
+                style="color: blue; position: absolute; left: 187px; top: 585px; background-color: white; font-size: 12px">
+                Locker
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 224px; top: 615px; background-color: white; font-size: 12px">
+                Locker
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 90px; top: 634px; background-color: white; font-size: 12px">
+                WC
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 89px; top: 665px; background-color: white; font-size: 12px">
+                WC
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 256px; top: 635px; background-color: white; font-size: 12px">
+                BBT
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 231px; top: 668px; background-color: white; font-size: 12px">
+                Reliability Room</p>
+            <p
+                style="color: blue; position: absolute; left: 123px; top: 713px; background-color: white; font-size: 12px">
+                OQC
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 218px; top: 713px; background-color: white; font-size: 12px">
+                Electrical</p>
+            <p
+                style="color: blue; position: absolute; left: 124px; top: 744px; background-color: white; font-size: 12px">
+                Tech.
+                Room</p>
+
+            <p
+                style="color: blue; position: absolute; left: 125px; top: 771px; background-color: white; font-size: 12px">
+                IQC
+                SMT</p>
+            <p
+                style="color: blue; position: absolute; left: 112px; top: 860px; background-color: white; font-size: 12px">
+                Export
+                Warehouse</p>
+            <p
+                style="color: blue; position: absolute; left: 297px; top: 841px; background-color: white; font-size: 12px">
+                SMT
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 484px; top: 858px; background-color: white; font-size: 12px">
+                SMT
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 630px; top: 833px; background-color: white; font-size: 12px">
+                Vip
+                Room</p>
+            <p
+                style="color: blue; position: absolute; left: 616px; top: 750px; background-color: white; font-size: 12px">
+                Vip
+                Room</p>
+            <p
+                style="color: blue; position: absolute; left: 728px; top: 765px; background-color: white; font-size: 12px">
+                Office
+                Room</p>
+            <p
+                style="color: blue; position: absolute; left: 815px; top: 857px; background-color: white; font-size: 12px">
+                FI
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 800px; top: 754px; background-color: white; font-size: 12px">
+                Marking</p>
+            <p
+                style="color: blue; position: absolute; left: 863px; top: 742px; background-color: white; font-size: 12px">
+                Sputtering</p>
+            <p
+                style="color: blue; position: absolute; left: 969px; top: 733px; background-color: white; font-size: 12px">
+                PSR
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 1041px; top: 841px; background-color: white; font-size: 12px">
+                Au
+                Planting</p>
+            <p
+                style="color: blue; position: absolute; left: 1115px; top: 836px; background-color: white; font-size: 12px">
+                Training Room</p>
+            <p
+                style="color: blue; position: absolute; left: 1198px; top: 839px; width: 50px; text-align: center; background-color: white; font-size: 12px">
+                Auto Stiff Room</p>
+            <p
+                style="color: blue; position: absolute; left: 1275px; top: 844px; text-align:center; background-color: white; font-size: 12px">
+                Auto Stiffer</p>
+            <p
+                style="color: blue; position: absolute; left: 1267px; top: 762px; background-color: white; font-size: 12px">
+                Training</p>
+            <p
+                style="color: blue; position: absolute; left: 1350px; top: 730px; background-color: white; font-size: 12px">
+                Not
+                Use</p>
+            <p
+                style="color: blue; position: absolute; left: 1350px; top: 653px; background-color: white; font-size: 12px">
+                WC
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 1345px; top: 594px; background-color: white; font-size: 12px">
+                WC
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 1269px; top: 645px; background-color: white; font-size: 12px">
+                Guide
+            </p>
+            <p
+                style="color: blue; position: absolute; left: 1317px; top: 552px; background-color: white; text-align: center; font-size: 12px">
+                Warehouse UT</p>
+            <p
+                style="color: blue; position: absolute; left: 1315px; top: 499px; background-color: white; text-align: center; font-size: 12px">
+                Manufacturing</p>
+            <p
+                style="color: blue; position: absolute; left: 1256px; top: 522px; background-color: white; text-align: center; font-size: 12px">
+                Warehouse</p>
+            <p
+                style="color: blue; position: absolute; left: 1176px; top: 563px; background-color: white; text-align: center; font-size: 12px">
+                Hotpress</p>
+            <p
+                style="color: blue; position: absolute; left: 1214px; top: 496px; background-color: white; text-align: center; font-size: 12px">
+                Layup</p>
+            <p
+                style="color: blue; position: absolute; left: 1081px; top: 604px; background-color: white; text-align: center; font-size: 12px">
+                Coverlay Room</p>
+            <p
+                style="color: blue; position: absolute; left: 1019px; top: 666px; background-color: white; text-align: center; font-size: 12px">
+                R&D</p>
+            <p
+                style="color: blue; position: absolute; left: 1035px; top: 598px; background-color: white; text-align: center; font-size: 12px">
+                AOI</p>
+            <p
+                style="color: blue; position: absolute; left: 873px; top: 665px; background-color: white; text-align: center; font-size: 12px">
+                PTHC</p>
+            <p
+                style="color: blue; position: absolute; left: 796px; top: 670px; background-color: white; text-align: center; font-size: 12px">
+                R&D</p>
+            <p
+                style="color: blue; position: absolute; left: 767px; top: 651px; background-color: white; text-align: center; font-size: 12px">
+                Warehouse</p>
+            <p
+                style="color: blue; position: absolute; left: 772px; top: 634px; background-color: white; text-align: center; font-size: 12px">
+                Cut</p>
+            <p
+                style="color: blue; position: absolute; left: 672px; top: 663px; background-color: white; text-align: center; font-size: 12px">
+                Film</p>
+            <p
+                style="color: blue; position: absolute; left: 532px; top: 630px; background-color: white; text-align: center; font-size: 12px">
+                Cu Plating Room</p>
+            <p
+                style="color: blue; position: absolute; left: 353px; top: 632px; background-color: white; text-align: center; font-size: 12px">
+                CNC Room</p>
+
+            <p style="color: blue; position: absolute; left: 443px; top: 407px; background-color: white;font-size:12px">
+                Pump
+                Room </p>
+            <p
+                style="color: blue; position: absolute; left: 550px; top: 418px; width: 104px; background-color: white; font-size: 12px">
+                Chemical warehouse </p>
+            <p style="color: blue; position: absolute; left: 518px; top: 488px; background-color: white;">Air
+                compressor
+                1
+            </p>
+            <p style="color: blue; position: absolute; left: 715px; top: 376px; background-color: white;font-size:12px">
+                Air
+                compressor 2 </p>
+            <p
+                style="color: blue; position: absolute; left: 835px; top: 377px; background-color: white; font-size: 12px">
+                Electrical Room </p>
+            <p style="color: blue; position: absolute; left: 884px; top: 429px; background-color: white;">Chiller
+                Room
+            </p>
+            <p style="color: blue; position: absolute; left: 875px; top: 480px; background-color: white;">Wetline
+                Room
+            </p>
+
+            <!-- Đèn LED -->
+            <HMI-LED id="zone1" style="position:absolute; left:135px; top:800px; " width="40 " height="40 "
+                value="true " Oncolor="images/firegif.gif " Offcolor="black "></HMI-LED>
+            <img id="zone1-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:85px; top:710px; display: none;">
+            <h3 style="position:absolute; left:115px; top:830px; background-color: white; ">ZONE 01</h3>
+
+            <HMI-LED id="zone2" style="position:absolute; left:295px; top:770px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone2-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:245px; top:680px;  display: none;">
+
+            <h3 style="position:absolute; left:280px; top:800px; background-color: white; ">ZONE 02</h3>
+            <HMI-LED id="zone3" style="position:absolute; left:445px; top:770px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone3-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:395px; top:680px;  display: none;">
+            <h3 style="position:absolute; left:430px; top:800px; background-color: white; ">ZONE 03</h3>
+
+
+            <HMI-LED id="zone4" style="position:absolute; left:535px; top:790px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone4-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:480px; top:700px;  display: none;">
+            <h3 style="position:absolute; left:520px; top:820px; background-color: white; ">ZONE 04</h3>
+
+
+            <HMI-LED id="zone5" style="position:absolute; left:675px; top:770px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone5-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:620px; top:685px;  display: none;">
+            <h3 style="position:absolute; left:660px; top:800px; background-color: white; ">ZONE 05</h3>
+
+
+            <HMI-LED id="zone6" style="position:absolute; left:835px; top:780px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone6-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:783px; top:692px; display: none; ">
+            <h3 style="position:absolute; left:820px; top:810px; background-color: white; ">ZONE 06</h3>
+
+
+            <HMI-LED id="zone7" style="position:absolute; left:955px; top:780px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone7-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:900px; top:692px;  display: none;">
+            <h3 style="position:absolute; left:940px; top:810px; background-color: white; width: 80px;">ZONE 07</h3>
+
+
+            <HMI-LED id="zone8" style="position:absolute; left:1045px; top:780px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone8-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:990px; top:692px;  display: none;">
+            <h3 style="position:absolute; left:1030px; top:810px; background-color: white; width: 80px;">ZONE 08
+            </h3>
+
+            <HMI-LED id="zone9" style="position:absolute; left:1165px; top:760px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone9-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:1113px; top:673px;  display: none;">
+            <h3 style="position:absolute; left:1150px; top:790px; background-color: white; width: 80px;">ZONE 09
+            </h3>
+
+            <HMI-LED id="zone10" style="position:absolute; left:1315px; top:760px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone10-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:1253px; top:673px;  display: none;">
+            <h3 style="position:absolute; left:1300px; top:790px; background-color: white; width: 80px;">ZONE 10
+            </h3>
+
+            <HMI-LED id="zone11" style="position:absolute; left:450px; top:688px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone11-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:395px; top:590px;  display: none;">
+            <h3 style="position:absolute; left:500px; top:678px; background-color: white; width: 80px;">ZONE 11</h3>
+
+            <HMI-LED id="zone12" style="position:absolute; left:1215px; top:580px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone12-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:1163px; top:483px;  display: none;">
+            <h3 style="position:absolute; left:1200px; top:610px; background-color: white; width: 80px;">ZONE 12
+            </h3>
+
+            <HMI-LED id="zone13" style="position:absolute; left:1095px; top:540px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone13-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:1038px; top:446px; display: none; ">
+            <h3 style="position:absolute; left:1080px; top:570px; background-color: white; width: 80px;">ZONE 13
+            </h3>
+
+            <HMI-LED id="zone14" style="position:absolute; left:895px; top:540px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone14-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:838px; top:446px;  display: none;">
+            <h3 style="position:absolute; left:880px; top:570px; background-color: white; width: 80px;">ZONE 14</h3>
+
+            <HMI-LED id="zone15" style="position:absolute; left:995px; top:600px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone15-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:938px; top:516px;  display: none;">
+            <h3 style="position:absolute; left:980px; top:630px; background-color: white; width: 80px;">ZONE 15</h3>
+
+            <HMI-LED id="zone16" style="position:absolute; left:745px; top:570px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone16-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:688px; top:476px;  display: none;">
+            <h3 style="position:absolute; left:730px; top:600px; background-color: white; width: 80px;">ZONE 16</h3>
+
+            <HMI-LED id="zone17" style="position:absolute; left:545px; top:570px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone17-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:488px; top:476px;  display: none;">
+            <h3 style="position:absolute; left:530px; top:600px; background-color: white; width: 80px;">ZONE 17</h3>
+
+            <HMI-LED id="zone18" style="position:absolute; left:355px; top:570px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone18-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:298px; top:476px;  display: none;">
+            <h3 style="position:absolute; left:340px; top:600px; background-color: white; width: 80px;">ZONE 18</h3>
+
+            <HMI-LED id="zone19" style="position:absolute; left:165px; top:620px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone19-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:108px; top:526px; display: none; ">
+            <h3 style="position:absolute; left:150px; top:650px; background-color: white; width: 80px;">ZONE 19</h3>
+
+            <HMI-LED id="zone20" style="position:absolute; left:95px; top:510px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone20-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:48px; top:426px;  display: none;">
+            <h3 style="position:absolute; left:85px; top:540px; background-color: white; width: 80px;">ZONE 20</h3>
+
+            <HMI-LED id="zone21" style="position:absolute; left:1165px; top:400px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone21-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:1105px; top:307px;  display: none;">
+            <h3 style="position:absolute; left:1150px; top:430px; background-color: white; width: 80px;">ZONE 21
+            </h3>
+
+            <HMI-LED id="zone22" style="position:absolute; left:795px; top:420px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone22-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:735px; top:327px;  display: none;">
+            <h3 style="position:absolute; left:780px; top:450px; background-color: white; width: 80px;">ZONE 22</h3>
+
+            <HMI-LED id="zone23" style="position:absolute; left:575px; top:360px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone23-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:528px; top:267px;  display: none;">
+            <h3 style="position:absolute; left:560px; top:390px; background-color: white; width: 80px;">ZONE 23</h3>
+
+            <HMI-LED id="zone24" style="position:absolute; left:275px; top:360px; " width="40 " height="40 "
+                value="true " Oncolor="red " Offcolor="black "></HMI-LED>
+            <img id="zone24-fire" src="images/image10.png"
+                style="position:absolute;width: 150px;z-index: 50;left:228px; top:267px;  display: none;">
+            <h3 style="position:absolute; left:260px; top:390px; background-color: white; width: 80px;">ZONE 24</h3>
+
+        </div>
+
+        <!-- duongong-->
+
+        <!-- spinkler-->
+
+
+
+        <div id="zoneRightBottom">
+            <img id="tutang1" style="position:absolute;width:449px ;height:686px " src="images/anh6.png">
+
+            <!-- BUTTON ZONE-->
+            <HMI-BUTTON id="bton1" style="position:absolute;left:13px; top:117px;" width="77px" height="30px"
+                value=false Ontext="ZONE 01" Oncolor="red" Offtext="ZONE 01" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton2" style="position:absolute;left:99px; top:117px;" width="77px" height="30px"
+                value=false Ontext="ZONE 02" Oncolor="red" Offtext="ZONE 02" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton3" style="position:absolute;left:185px; top:117px;" width="77px" height="30px"
+                value=false Ontext="ZONE 03" Oncolor="red" Offtext="ZONE 03" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton4" style="position:absolute;left:271px; top:117px;" width="77px" height="30px"
+                value=false Ontext="ZONE 04" Oncolor="red" Offtext="ZONE 04" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton5" style="position:absolute;left:359px; top:117px;" width="77px" height="30px"
+                value=false Ontext="ZONE 05" Oncolor="red" Offtext="ZONE 05" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton6" style="position:absolute;left:13px; top:157px;" width="77px" height="30px"
+                value=false Ontext="ZONE 06" Oncolor="red" Offtext="ZONE 06" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton7" style="position:absolute;left:99px; top:157px;" width="77px" height="30px"
+                value=false Ontext="ZONE 07" Oncolor="red" Offtext="ZONE 07" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton8" style="position:absolute;left:185px; top:157px;" width="77px" height="30px"
+                value=false Ontext="ZONE 08" Oncolor="red" Offtext="ZONE 08" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton9" style="position:absolute;left:271px; top:157px;" width="77px" height="30px"
+                value=false Ontext="ZONE 09" Oncolor="red" Offtext="ZONE 09" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton10" style="position:absolute;left:359px; top:157px;" width="77px" height="30px"
+                value=false Ontext="ZONE 10" Oncolor="red" Offtext="ZONE 10" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton11" style="position:absolute;left:13px; top:198px;" width="77px" height="30px"
+                value=false Ontext="ZONE 11" Oncolor="red" Offtext="ZONE 11" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton12" style="position:absolute;left:99px; top:198px;" width="77px" height="30px"
+                value=false Ontext="ZONE 12" Oncolor="red" Offtext="ZONE 12" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton13" style="position:absolute;left:185px; top:198px;" width="77px" height="30px"
+                value=false Ontext="ZONE 13" Oncolor="red" Offtext="ZONE 13" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton14" style="position:absolute;left:271px; top:198px;" width="77px" height="30px"
+                value=false Ontext="ZONE 14" Oncolor="red" Offtext="ZONE 14" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton15" style="position:absolute;left:359px; top:198px;" width="77px" height="30px"
+                value=false Ontext="ZONE 15" Oncolor="red" Offtext="ZONE 15" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton16" style="position:absolute;left:13px; top:239px;" width="77px" height="30px"
+                value=false Ontext="ZONE 16" Oncolor="red" Offtext="ZONE 16" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton17" style="position:absolute;left:99px; top:239px;" width="77px" height="30px"
+                value=false Ontext="ZONE 17" Oncolor="red" Offtext="ZONE 17" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton18" style="position:absolute;left:185px; top:239px;" width="77px" height="30px"
+                value=false Ontext="ZONE 18" Oncolor="red" Offtext="ZONE 18" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton19" style="position:absolute;left:271px; top:239px;" width="77px" height="30px"
+                value=false Ontext="ZONE 19" Oncolor="red" Offtext="ZONE 19" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton20" style="position:absolute;left:359px; top:239px;" width="77px" height="30px"
+                value=false Ontext="ZONE 20" Oncolor="red" Offtext="ZONE 20" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton21" style="position:absolute;left:13px; top:280px;" width="77px" height="30px"
+                value=false Ontext="ZONE 21" Oncolor="red" Offtext="ZONE 21" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton22" style="position:absolute;left:99px; top:280px;" width="77px" height="30px"
+                value=false Ontext="ZONE 22" Oncolor="red" Offtext="ZONE 22" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton23" style="position:absolute;left:185px; top:280px;" width="77px" height="30px"
+                value=false Ontext="ZONE 23" Oncolor="red" Offtext="ZONE 23" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton24" style="position:absolute;left:271px; top:280px;" width="77px" height="30px"
+                value=false Ontext="ZONE 24" Oncolor="red" Offtext="ZONE 24" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton25" style="position:absolute;left:359px; top:280px;" width="77px" height="30px"
+                value=false Ontext="ZONE 25" Oncolor="red" Offtext="ZONE 25" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton26" style="position:absolute;left:13px; top:322px;" width="77px" height="30px"
+                value=false Ontext="ZONE 26" Oncolor="red" Offtext="ZONE 26" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton27" style="position:absolute;left:99px; top:322px;" width="77px" height="30px"
+                value=false Ontext="ZONE 27" Oncolor="red" Offtext="ZONE 27" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton28" style="position:absolute;left:185px; top:322px;" width="77px" height="30px"
+                value=false Ontext="ZONE 28" Oncolor="red" Offtext="ZONE 28" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton29" style="position:absolute;left:271px; top:322px;" width="77px" height="30px"
+                value=false Ontext="ZONE 29" Oncolor="red" Offtext="ZONE 29" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+            <HMI-BUTTON id="bton30" style="position:absolute;left:359px; top:322px;" width="77px" height="30px"
+                value=false Ontext="ZONE 30" Oncolor="red" Offtext="ZONE 30" Offcolor="#90ec90ff">
+            </HMI-BUTTON>
+
+            <!-- <input value="30"
+                style="position:absolute;text-align: center;border: none; left:261px; top:412px; background-color: black; color: #07f3e8; width: 35px; height: 30px; "
+                disabled> -->
+        </div>
+
+
+
+        <section class="wapper2">
+            <span
+                style="    position: absolute;left: 196px;font-size: 12px; text-transform: uppercase;line-height: 20px; ">Proceedings
+                :</span>
+            <div class="progress-bar">
+                <span class="bar">
+                    <span class="progress"></span>
+                </span>
+            </div>
+            <form style=" position: absolute; left: 638px ;top:0px;">
+                CONNECT: <input id="connect" class="black green " type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                SPINKLER : <input id="SPINKLER" class="black " type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                PLC: <input id="pumpPlc" class="black " type="text" disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                PLC_AUTO_DOOR: <input id="doorplc" class="black " type="text" disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                TIME UPDATE DATA: <input id="timedata" style="height: 18px; border: none;" type="text" value=""
+                    disabled />
+            </form>
+        </section>
+        </section>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.js"></script>
+    <!-- <script type="text/javascript " src="js/mqttws31.min.js"></script> -->
+    <!-- <script type="text/javascript " src="js/jquery-3.1.0.min.js"></script> -->
+    <script type="text/javascript " src="js/toggeled.js "></script>
+    <script type="text/javascript " src="js/HMI-Display.js"></script>
+    <script type="text/javascript " src="js/HMI-Button.js"></script>
+    <script type="text/javascript " src="js/HMI-LED.js "></script>
+    <script type="text/javascript " src="js/HMI-Picture.js "></script>
+    <!-- <link rel="stylesheet" type="text/css" href="Blink.css"> -->
+    <script type="text/javascript " src="js/app.js "></script>
+
+</body>
+
+
+</html>

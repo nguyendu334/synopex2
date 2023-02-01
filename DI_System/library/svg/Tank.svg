@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="190"
+   height="250"
+   viewBox="0 0 81.8407 144"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Tank.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.096401"
+     inkscape:cx="153.35806"
+     inkscape:cy="114.24341"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g956" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7773">
+      <stop
+         style="stop-color:#b1b1b1;stop-opacity:1"
+         offset="0"
+         id="stop7769" />
+      <stop
+         style="stop-color:#c9c9c9;stop-opacity:0.88578087"
+         offset="0.25"
+         id="stop1418" />
+      <stop
+         style="stop-color:#e4e4e4;stop-opacity:0.66200465"
+         offset="0.5"
+         id="stop7871" />
+      <stop
+         style="stop-color:#bbbbbb;stop-opacity:1"
+         offset="1"
+         id="stop7771" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7773"
+       id="linearGradient7775"
+       x1="5.3387561"
+       y1="72.286659"
+       x2="98.024765"
+       y2="72.698792"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1657226,0,0,0.99999995,-19.327088,-0.64711689)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="g11005">
+    <rect
+       style="opacity:1;fill:#000000;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.141505;stop-color:#000000;fill-opacity:1"
+       id="rect855"
+       width="108.62834"
+       height="143.17572"
+       x="-13.349196"
+       y="0.54951322" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient7775);fill-opacity:1;stroke:#252525;stroke-width:0.345783;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect846"
+       width="108.62834"
+       height="99.427587%"
+       x="-13.349196"
+       y="0.54951322" />
+  </g>
+  <style
+     id="style16">
+      #bocngoai{
+           position: relative;
+        background: #f2f2f2;
+        border:2px solid black;
+        z-index:2;
+        width:121%;
+        height:105px
+
+    }
+    #water {
+      position: absolute;
+      bottom: 0;
+      background: #87cefa;
+      width: 100%;
+       z-index:1
+    }
+  
+
+  </style>
+  <foreignObject
+     id="bocngoai"
+     x="-9"
+     y="31">
+    <xhtml:div
+       id="water" />
+  </foreignObject>
+  <g
+     id="g956"
+     transform="translate(-0.82426978,47.807647)">
+    <rect
+       style="fill:#150000;fill-opacity:1;stroke:#ffffff;stroke-width:0.827965;stroke-linejoin:round;stroke-opacity:1"
+       id="rect5087"
+       width="72.978226"
+       height="18.252439"
+       x="5.4868283"
+       y="8.1834459" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.0092px;line-height:1.25;font-family:Digital-7;-inkscape-font-specification:'Digital-7, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="42.654785"
+       y="22.528379"
+       id="text10329"
+       transform="scale(1.0234602,0.97707756)"><tspan
+         sodipodi:role="line"
+         id="tspan10327"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.0092px;font-family:Digital-7;-inkscape-font-specification:'Digital-7, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke-width:0.264583"
+         x="42.654785"
+         y="22.528379">286456</tspan></text>
+  </g>
+</svg>

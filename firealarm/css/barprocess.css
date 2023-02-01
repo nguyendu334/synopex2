@@ -1,0 +1,41 @@
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.progress-bar {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+span .bar,
+span.progress {
+  display: block;
+}
+
+.bar {
+  background: rgba(0, 0, 0, 0.075);
+}
+
+.progress {
+  animation: loader 8s linear infinite;
+  background: #dbeb05;
+  height: 30px;
+  color: #fff;
+  width: 0;
+}
+
+.progress-bar {
+  left: 20.5%;
+  bottom: -6px;
+  width: 200px;
+  height: 15px;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+}

@@ -1,0 +1,32 @@
+<service>
+	<id>diservicesoniot.exe</id>
+	<name>DIserviceSonIOT</name>
+	<description>The nodejs.org example web server.</description>
+	<executable>D:\nodejs\node.exe</executable>
+	<argument>--harmony</argument>
+	<argument>D:\nvm\v16.17.0\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>E:\Synopex\DI Service\index.js</argument>
+	<argument>--scriptoptions=</argument>
+	<argument>--log</argument>
+	<argument>DIserviceSonIOT wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<logmode>rotate</logmode>
+	<stoptimeout>30sec</stoptimeout>
+	<env name="NODE_ENV" value="production"/>
+	<serviceaccount>
+		<domain>NGUYENDU</domain>
+		<user>LocalSystem</user>
+		<password></password>
+	</serviceaccount>
+	<workingdirectory>E:\Synopex\DI Service</workingdirectory>
+</service>

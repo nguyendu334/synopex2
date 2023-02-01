@@ -1,0 +1,394 @@
+#LedrawpumpA1 {
+  position: absolute;
+  z-index: 10;
+  top: 45px;
+  left: 62px;
+}
+#LedrawpumpC1 {
+  position: absolute;
+  z-index: 10;
+  top: 106px;
+  left: 62px;
+}
+#LedrawpumpB1 {
+  position: absolute;
+  z-index: 10;
+  top: 170px;
+  left: 62px;
+}
+
+#LedrawpumpA2 {
+  position: absolute;
+  z-index: 10;
+  top: 261px;
+  left: 73px;
+}
+#LedrawpumpC2 {
+  position: absolute;
+  z-index: 10;
+  top: 322px;
+  left: 73px;
+}
+#LedrawpumpB2 {
+  position: absolute;
+  z-index: 10;
+  top: 384px;
+  left: 73px;
+}
+
+#LedropressurepumpA1 {
+  position: absolute;
+  z-index: 10;
+  top: 22px;
+  left: 660px;
+}
+#LedropressurepumpC1 {
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  left: 660px;
+}
+#LedropressurepumpB1 {
+  position: absolute;
+  z-index: 10;
+  top: 139px;
+  left: 660px;
+}
+
+#LedropressurepumpA2 {
+  position: absolute;
+  z-index: 10;
+  top: 227px;
+  left: 681px;
+}
+#LedropressurepumpC2 {
+  position: absolute;
+  z-index: 10;
+  top: 300px;
+  left: 681px;
+}
+#LedropressurepumpB2 {
+  position: absolute;
+  z-index: 10;
+  top: 369px;
+  left: 681px;
+}
+
+#LedediwaterpumpTop1 {
+  position: absolute;
+  z-index: 10;
+  top: 525px;
+  left: 992px;
+}
+#LedediwaterpumpTop2 {
+  position: absolute;
+  z-index: 10;
+  top: 575px;
+  left: 992px;
+}
+#LedediwaterpumpTop3 {
+  position: absolute;
+  z-index: 10;
+  top: 619px;
+  left: 992px;
+}
+#LedediwaterpumpBottom1 {
+  position: absolute;
+  z-index: 10;
+  top: 769px;
+  left: 982px;
+}
+#LedediwaterpumpBottom2 {
+  position: absolute;
+  z-index: 10;
+  top: 817px;
+  left: 982px;
+}
+#LedediwaterpumpBottom3 {
+  position: absolute;
+  z-index: 10;
+  top: 861px;
+  left: 982px;
+}
+#Ledro2ProductA {
+  position: absolute;
+  z-index: 10;
+  top: 448px;
+  left: 1365px;
+}
+#Ledro2ProductB {
+  position: absolute;
+  z-index: 10;
+  top: 555px;
+  left: 1365px;
+}
+
+#LedEdisystem1ATop {
+  position: absolute;
+  z-index: 10;
+  top: 518px;
+  left: 642px;
+}
+#LedEdisystem2ATop {
+  position: absolute;
+  z-index: 10;
+  top: 595px;
+  left: 557px;
+}
+#LedEdisystem2BTop {
+  position: absolute;
+  z-index: 10;
+  top: 595px;
+    left: 595px;
+}
+#LedEdisystem2CTop {
+  position: absolute;
+  z-index: 10;
+  top: 595px;
+  left: 632px;
+}
+
+#LedEdisystem1ABottom {
+  position: absolute;
+  z-index: 10;
+  top: 761px;
+  left: 588px;
+}
+#LedEdisystem1BBottom {
+  position: absolute;
+  z-index: 10;
+  top: 800px;
+  left: 588px;
+}
+#LedEdisystem2ABottom {
+  position: absolute;
+  z-index: 10;
+  top: 840px;
+  left: 588px;
+}
+#LedEdisystem2BBottom {
+  position: absolute;
+  z-index: 10;
+  top: 879px;
+  left: 588px;
+}
+#Ledsv1 {
+  position: absolute;
+  z-index: 10;
+  top: 6px;
+  left: 417px;
+}
+#Ledsv2 {
+  position: absolute;
+  z-index: 10;
+  top: 117px;
+  left: 417px;
+}
+#Ledsv5Top {
+  position: absolute;
+  z-index: 10;
+  top: 512px;
+  left: 321px;
+}
+#Ledsv4Top {
+  position: absolute;
+  z-index: 10;
+  top: 526px;
+  left: 313px;
+}
+#Ledsv7Top {
+  position: absolute;
+  z-index: 10;
+  top: 606px;
+  left: 311px;
+}
+#Ledsv8Top {
+  position: absolute;
+  z-index: 10;
+  top: 598px;
+  left: 329px;
+}
+#Ledsv3Top {
+  position: absolute;
+  z-index: 10;
+  top: 525px;
+  left: 679px;
+}
+#Ledsv6Top {
+  position: absolute;
+  z-index: 10;
+  top: 604px;
+  left: 679px;
+}
+
+#Ledsv5Bottom {
+  position: absolute;
+  z-index: 10;
+  top: 751px;
+  left: 301px;
+}
+#Ledsv4Bottom {
+  position: absolute;
+  z-index: 10;
+  top: 768px;
+  left: 294px;
+}
+#Ledsv7Bottom {
+  position: absolute;
+  z-index: 10;
+  top: 849px;
+  left: 294px;
+}
+#Ledsv8Bottom {
+  position: absolute;
+  z-index: 10;
+  top: 837px;
+  left: 310px;
+}
+#Ledsv3Bottom {
+  position: absolute;
+  z-index: 10;
+  top: 771px;
+  left: 618px;
+}
+#Ledsv6Bottom {
+  position: absolute;
+  z-index: 10;
+  top: 849px;
+  left: 618px;
+}
+
+#Ledlp1 {
+  position: absolute;
+  z-index: 10;
+  top: 7px;
+  left: 512px;
+}
+#Ledlp2 {
+  position: absolute;
+  z-index: 10;
+  top: 114px;
+  left: 513px;
+}
+#Ledps1l {
+  position: absolute;
+  z-index: 10;
+  top: 218px;
+  left: 516px;
+}
+#Ledps2l {
+  position: absolute;
+  z-index: 10;
+  top: 336px;
+  left: 516px;
+}
+#Ledps1h {
+  position: absolute;
+  z-index: 10;
+  top: 211px;
+  left: 748px;
+}
+#Ledps2h {
+  position: absolute;
+  z-index: 10;
+  top: 380px;
+  left: 777px;
+}
+#Ledfs1top {
+  position: absolute;
+  z-index: 10;
+  top: 505px;
+  left: 769px;
+}
+#Ledfs2top {
+  position: absolute;
+  z-index: 10;
+  top: 583px;
+  left: 769px;
+}
+#Ledfs1bottom {
+  position: absolute;
+  z-index: 10;
+  top: 748px;
+  left: 768px;
+}
+#Ledfs2bottom {
+  position: absolute;
+  z-index: 10;
+  top: 825px;
+  left: 768px;
+}
+
+#Leduv1top {
+  position: absolute;
+  z-index: 10;
+  top: 569px;
+  left: 833px;
+}
+#Leduv2top {
+  position: absolute;
+  z-index: 10;
+  top: 646px;
+  left: 833px;
+}
+#Leduv1bottom {
+  position: absolute;
+  z-index: 10;
+  top: 812px;
+  left: 834px;
+}
+#Leduv2bottom {
+  position: absolute;
+  z-index: 10;
+  top: 888px;
+  left: 833px;
+}
+
+#LedTankxanh1 {
+  position: absolute;
+  z-index: 10;
+  top: 51px;
+  left: 259px;
+}
+#LedTankxanh2 {
+  position: absolute;
+  z-index: 10;
+  top: 51px;
+  left: 331px;
+}
+#LedTankxanh3 {
+  position: absolute;
+  z-index: 10;
+  top: 165px;
+  left: 260px;
+}
+#LedTankxanh4 {
+  position: absolute;
+  z-index: 10;
+  top: 165px;
+  left: 331px;
+}
+#LedTankxanh5 {
+  position: absolute;
+  z-index: 10;
+  top: 296px;
+  left: 260px;
+}
+#LedTankxanh6 {
+  position: absolute;
+  z-index: 10;
+  top: 296px;
+  left: 331px;
+}
+#LedTankxanh7 {
+  position: absolute;
+  z-index: 10;
+  top: 409px;
+  left: 260px;
+}
+#LedTankxanh8 {
+  position: absolute;
+  z-index: 10;
+  top: 409px;
+  left: 331px;
+}

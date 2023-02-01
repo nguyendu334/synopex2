@@ -1,0 +1,28 @@
+#btonTop30 {
+  position: absolute;
+  width: 77px;
+  height: 28px;
+  background: 00ffdc;
+  z-index: 99999;
+  background-color: rgb(240, 255, 243);
+}
+#btonTop31 {
+  position: absolute;
+  left: 0px;
+  top: 32px;
+}
+#btonTop32 {
+  position: absolute;
+  left: 0px;
+  top: 63px;
+}
+#btonTop33 {
+  position: absolute;
+  left: 0px;
+  top: 94px;
+}
+#btonTop34 {
+  position: absolute;
+  left: 0px;
+  top: 124px;
+}

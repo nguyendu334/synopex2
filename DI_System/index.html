@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DI MONITORING WEB-SYSTEM</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="max-width=device-max-width, initial-scale=1">
+    <link rel="shortcut icon" type="images/jpg" href="images/favicon.jpg" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toggeled.css">
+    <link rel="stylesheet" href="css/barprocess.css">
+    <link rel="stylesheet" href="css/dataTable.css">
+    <link rel="stylesheet" href="css/led.css">
+    <link rel="stylesheet" href="css/dataLED.css">
+    <link rel="stylesheet" href="css/arrow.css">
+    <link rel="stylesheet" href="css/pump.css">
+    <link rel="stylesheet" href="css/vavle.css">
+    <link rel="stylesheet" href="css/char.css">
+    <link rel="stylesheet" href="css/hsdtank.css">
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <style>
+        .legend {
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="background-color:#F0F0F0;margin: 0;">
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li class="mt">
+                    <a href="index.html">
+                        <a href="historians.html " target="_blank"> <i class="fa fa-history" aria-hidden="true"> Live
+                                Data</i>
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <div id="container">
+
+        <header id="tieude">
+            <div class="sidebar-toggle-box">
+                <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+            </div>
+            <a href="index.html" class="logo"><b>Syno<span style="font-size: 34px;">pex</span></b></a>
+
+            <p id="myTime"></p>
+            <!-- <img id="loa" src="images/onvolumn.png" width=50 height=50>
+            <audio id="myAudio" loop>
+                <source src="audio/canhbao.mp3" type="audio/mpeg">
+            </audio> -->
+            <div class="backname"><span class="NameProject">DI MONITORING WEB-SYSTEM</span></div>
+
+        </header>
+        <section id="wapper">
+            <div id="left-wapper">
+                <!-- <img src="images/back.png" id="back"> -->
+                <iframe src="background.svg" id="back"></iframe>
+                <iframe src="ongol.svg" id="rosystemOn1"></iframe>
+                <iframe src="ongol.svg" id="rosystemOn2"></iframe>
+                <iframe src="ongol.svg" id="rosystemOn3"></iframe>
+                <iframe src="ongol.svg" id="rosystemOn4"></iframe>
+
+                <!-- HSD tank -->
+
+                <div id="bocngoaitanktrang1">
+                    <div id="bentrongtanktrang1"></div>
+                </div>
+                <div id="bocngoaitanktrang2">
+                    <div id="bentrongtanktrang2"></div>
+                </div>
+                <div id="bocngoaitanktrang3">
+                    <div id="bentrongtanktrang3"></div>
+                </div>
+                <div id="bocngoaitanktrang4">
+                    <div id="bentrongtanktrang4"></div>
+                </div>
+                <div id="bocngoaitanktrang5">
+                    <div id="bentrongtanktrang5"></div>
+                </div>
+                <div id="bocngoaitanktrang6">
+                    <div id="bentrongtanktrang6"></div>
+                </div>
+                <div id="bocngoaitanktrang7">
+                    <div id="bentrongtanktrang7"></div>
+                </div>
+                <div id="bocngoaitanktrang8">
+                    <div id="bentrongtanktrang8"></div>
+                </div>
+                <div id="bocngoaitanktrang9">
+                    <div id="bentrongtanktrang9"></div>
+                </div>
+                <div id="bocngoaitanktrang10">
+                    <div id="bentrongtanktrang10"></div>
+                </div>
+                <div id="bocngoaitanktrang11">
+                    <div id="bentrongtanktrang11"></div>
+                </div>
+                <div id="bocngoaitanktrang12">
+                    <div id="bentrongtanktrang12"></div>
+                </div>
+                <div id="bocngoaitanktrang13">
+                    <div id="bentrongtanktrang13"></div>
+                </div>
+                <div id="bocngoaitanktrang14">
+                    <div id="bentrongtanktrang14"></div>
+                </div>
+
+                <div id="bocngoaitankxanh1">
+                    <div id="bentrongtankxanh1"></div>
+                </div>
+                <div id="bocngoaitankxanh2">
+                    <div id="bentrongtankxanh2"></div>
+                </div>
+                <div id="bocngoaitankxanh3">
+                    <div id="bentrongtankxanh3"></div>
+                </div>
+                <div id="bocngoaitankxanh4">
+                    <div id="bentrongtankxanh4"></div>
+                </div>
+                <div id="bocngoaitankxanh5">
+                    <div id="bentrongtankxanh5"></div>
+                </div>
+                <div id="bocngoaitankxanh6">
+                    <div id="bentrongtankxanh6"></div>
+                </div>
+                <div id="bocngoaitankxanh7">
+                    <div id="bentrongtankxanh7"></div>
+                </div>
+                <div id="bocngoaitankxanh8">
+                    <div id="bentrongtankxanh8"></div>
+                </div>
+
+
+                <div id="bocngoaitankto">
+                    <div id="bentrongtankto"></div>
+                </div>
+                <!-- Pump -->
+                <iframe src="svg/fanolfinal.svg" id="rawpumpA1"></iframe>
+                <!-- <div id="LedrawpumpA1" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="rawpumpC1"></iframe>
+                <!-- <div id="LedrawpumpC1" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="rawpumpB1"></iframe>
+                <!-- <div id="LedrawpumpB1" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="rawpumpA2"></iframe>
+                <!-- <div id="LedrawpumpA2" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="rawpumpC2"></iframe>
+                <!-- <div id="LedrawpumpC2" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="rawpumpB2"></iframe>
+                <!-- <div id="LedrawpumpB2" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ropressurepumpA1"></iframe>
+                <!-- <div id="LedropressurepumpA1" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ropressurepumpC1"></iframe>
+                <!-- <div id="LedropressurepumpC1" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ropressurepumpB1"></iframe>
+                <!-- <div id="LedropressurepumpB1" class="on ledgarenal">
+                </div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ropressurepumpA2"></iframe>
+                <!-- <div id="LedropressurepumpA2" class="on ledgarenal"></div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ropressurepumpC2"></iframe>
+                <!-- <div id="LedropressurepumpC2" class="on ledgarenal"></div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ropressurepumpB2"></iframe>
+                <!-- <div id="LedropressurepumpB2" class="on ledgarenal"></div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ediwaterpumpTop1"></iframe>
+                <!-- <div id="LedediwaterpumpTop1" class="on ledgarenal"></div> -->
+                <iframe src="svg/fanolfinal.svg" id="ediwaterpumpTop2"></iframe>
+                <!-- <div id="LedediwaterpumpTop2" class="on ledgarenal"></div> -->
+                <iframe src="svg/fanolfinal.svg" id="ediwaterpumpTop3"></iframe>
+                <!-- <div id="LedediwaterpumpTop3" class="on ledgarenal"></div> -->
+
+                <iframe src="svg/FanOff.svg" id="ediwaterpumpBottom1"></iframe>
+                <!-- <div id="LedediwaterpumpBottom1" class="on ledgarenal"></div> -->
+                <iframe src="svg/FanOff.svg" id="ediwaterpumpBottom2"></iframe>
+                <!-- <div id="LedediwaterpumpBottom2" class="on ledgarenal"></div> -->
+                <iframe src="svg/FanOff.svg" id="ediwaterpumpBottom3"></iframe>
+                <!-- <div id="LedediwaterpumpBottom3" class="on ledgarenal"></div> -->
+
+                <iframe src="svg/fanolfinal.svg" id="ro2ProductA"></iframe>
+                <!-- <div id="Ledro2ProductA" class="on ledgarenal"></div> -->
+                <iframe src="svg/fanolfinal.svg" id="ro2ProductB"></iframe>
+                <!-- <div id="Ledro2ProductB" class="on ledgarenal"></div> -->
+                <!-- img vavle -->
+                <img src="images/vavleOn.png" id="sv1top">
+                <img src="images/vavleOn.png" id="sv2top">
+                <img src="images/vavleOn.png" id="sv5top">
+                <img src="images/vavleOn.png" id="sv4top">
+                <img src="images/vavleOn.png" id="sv7top">
+                <img src="images/vavleOn.png" id="sv8top">
+                <img src="images/vavleOn.png" id="sv3top">
+                <img src="images/vavleOn.png" id="sv6top">
+
+                <img src="images/ValveOff.png" id="sv5bottom">
+                <img src="images/ValveOff.png" id="sv4bottom">
+                <img src="images/ValveOff.png" id="sv7bottom">
+                <img src="images/ValveOff.png" id="sv8bottom">
+                <img src="images/ValveOff.png" id="sv3bottom">
+                <img src="images/ValveOff.png" id="sv6bottom">
+
+                <!-- Led -->
+                <div id="LedTankxanh1" class="on ledgarenal"></div>
+                <div id="LedTankxanh2" class="on ledgarenal"></div>
+                <div id="LedTankxanh3" class="on ledgarenal"></div>
+                <div id="LedTankxanh4" class="on ledgarenal"></div>
+
+                <div id="LedTankxanh5" class="on ledgarenal"></div>
+                <div id="LedTankxanh6" class="on ledgarenal"></div>
+                <div id="LedTankxanh7" class="on ledgarenal"></div>
+                <div id="LedTankxanh8" class="on ledgarenal"></div>
+
+
+                <div id="LedEdisystem1ATop" class="on ledgarenal"></div>
+                <div id="LedEdisystem2ATop" class="on ledgarenal"></div>
+                <div id="LedEdisystem2BTop" class="on ledgarenal"></div>
+                <div id="LedEdisystem2CTop" class="on ledgarenal"></div>
+
+                <div id="LedEdisystem1ABottom" class="ledgarenal"></div>
+                <div id="LedEdisystem1BBottom" class="ledgarenal"></div>
+                <div id="LedEdisystem2ABottom" class="ledgarenal"></div>
+                <div id="LedEdisystem2BBottom" class="ledgarenal"></div>
+
+                <!-- <div id="Ledsv1" class="on ledgarenal"></div>
+                <div id="Ledsv2" class="on ledgarenal"></div> -->
+
+                <!-- <div id="Ledsv5Top" class="on ledgarenal"></div>
+                <div id="Ledsv4Top" class="on ledgarenal"></div>
+                <div id="Ledsv7Top" class="on ledgarenal"></div>
+                <div id="Ledsv8Top" class="on ledgarenal"></div>
+                <div id="Ledsv3Top" class="on ledgarenal"></div>
+                <div id="Ledsv6Top" class="on ledgarenal"></div>
+
+
+                <div id="Ledsv5Bottom" class="on ledgarenal"></div>
+                <div id="Ledsv4Bottom" class="on ledgarenal"></div>
+                <div id="Ledsv7Bottom" class="on ledgarenal"></div>
+                <div id="Ledsv8Bottom" class="on ledgarenal"></div>
+                <div id="Ledsv3Bottom" class="on ledgarenal"></div>
+                <div id="Ledsv6Bottom" class="on ledgarenal"></div> -->
+
+                <div id="Ledlp1" class="on ledgarenal"></div>
+                <div id="Ledlp2" class="on ledgarenal"></div>
+                <div id="Ledps1l" class="on ledgarenal"></div>
+                <div id="Ledps2l" class="on ledgarenal"></div>
+                <div id="Ledps1h" class="on ledgarenal"></div>
+                <div id="Ledps2h" class="on ledgarenal"></div>
+                <div id="Ledfs1top" class="on ledgarenal"></div>
+                <div id="Ledfs2top" class="on ledgarenal"></div>
+                <div id="Ledfs1bottom" class="ledgarenal"></div>
+                <div id="Ledfs2bottom" class="ledgarenal"></div>
+
+                <div id="Leduv1top" class="on ledgarenal"></div>
+                <div id="Leduv2top" class="on ledgarenal"></div>
+                <div id="Leduv1bottom" class="ledgarenal"></div>
+                <div id="Leduv2bottom" class="ledgarenal"></div>
+                <!-- data pump -->
+                <span id="dataRawpumpA2">55.5 Hz</span>
+                <span id="dataRawpumpC2">55.5 Hz</span>
+                <span id="dataRawpumpB2">55.5 Hz</span>
+
+                <span id="dataRoPresspumpA2">55.5 Hz</span>
+                <span id="dataRoPresspumpC2">55.5 Hz</span>
+                <span id="dataRoPresspumpB2">55.5 Hz</span>
+
+                <span id="dataConductivity1">555.5</span>
+                <span id="dataConductivity2">55.55</span>
+                <span id="dataConductivity3">55.55</span>
+                <span id="dataConductivity4">55.55</span>
+
+                <span id="dataConductivity5">55.55</span>
+                <span id="dataConductivity6">55.55</span>
+                <span id="dataConductivity7">55.55</span>
+                <span id="dataConductivity8">55.55</span>
+
+                <span id="dataResistivity1">555.5</span>
+                <span id="dataResistivity2">55.55</span>
+                <span id="dataEDIResistivity1B_3">55.55</span><!-- dataEDIResistivity1B_3 -->
+                <span id="dataEDIResistivity1B_2">55.55</span>
+                <span id="dataEDIResistivity1B_1">55.55</span>
+                <span id="dataResistivity4">55.55</span>
+                <span id="dataResistivity5">NULL</span>
+                <span id="dataResistivity6">NULL</span>
+                <span id="dataResistivity7">NULL</span>
+                <span id="dataResistivity8">NULL</span>
+
+                <!-- <HMI-TANK id="TANK1" style="position:absolute; left:21px; top:512px;" width="190" height="250"
+                    value="1000" Oncolor="lightskyblue" Offcolor="white"></HMI-TANK> -->
+                <iframe src="library/svg/Tank.svg" style="position:absolute; left:21px; top:512px;" width="190"
+                    height="250" id="TANK1"></iframe>
+
+
+
+                <input type="text" id="LedAL1" class="" value="AL1">
+                <input type="text" id="LedAL2" class="" value="AL2">
+                <input type="text" id="LedAL3" class="" value="AL3">
+                <input type="text" id="LedAL4" class="" value="AL4">
+
+                <input type="text" id="valueAL1" class="" value="8.2">
+                <input type="text" id="valueAL2" class="" value="9">
+                <input type="text" id="valueAL3" class="" value="9.5">
+                <input type="text" id="valueAL4" class="" value="7">
+
+
+                <p id="phantramtankTo">75.5 %</p>
+                <p id="m3tankTo">90.2 m3</p>
+
+                <p id="tankTo">R/O WARER TANK</p>
+                <p id="RAWWATERTANK">RAWWATER <br />TREATMENT TANK</p>
+                <!-- <p id="DataRAWWATERTANK">66.9 %</p> -->
+            </div>
+            <div id="right-wapper">
+                <div class="chartCard">
+                    <div class="chartBox">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div id="tableRight">
+                    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+                        <tr class="row2">
+
+                            <td class="column1 style1 s style1" rowspan="2">Date</td>
+                            <td class="column2 style2 s style2" colspan="2">LINE #A1</td>
+                            <td class="column4 style2 s style2" colspan="2">LINE #B1</td>
+                            <td class="column6 style2 s style2" colspan="2">LINE #A2</td>
+                            <td class="column8 style2 s style2" colspan="2">LINE #B2</td>
+                            <td class="column10 style1 s style1" rowspan="2">Total</td>
+                            <td class="column11 style1 s style1" rowspan="2">%</td>
+                        </tr>
+                        <tr class="row3">
+                            <td class="column2 style3 s">Runtime</td>
+                            <td class="column3 style3 s">m3</td>
+                            <td class="column4 style3 s">Runtime</td>
+                            <td class="column5 style3 s">m3</td>
+                            <td class="column6 style3 s">Runtime</td>
+                            <td class="column7 style3 s">m3</td>
+                            <td class="column8 style3 s">Runtime</td>
+                            <td class="column9 style3 s">m3</td>
+                        </tr>
+                        <tr class="row5">
+
+                            <td class="column1 style4 n">1</td>
+                            <td class="column2 style5 n">12:12:12</td>
+                            <td class="column3 style4 null"></td>
+                            <td class="column4 style5 n">12:12:12</td>
+                            <td class="column5 style4 null"></td>
+                            <td class="column6 style5 n">12:12:12</td>
+                            <td class="column7 style4 null"></td>
+                            <td class="column8 style5 n">12:12:12</td>
+                            <td class="column9 style4 null"></td>
+                            <td class="column10 style5 n">12:12:12</td>
+                            <td class="column11 style4 null"></td>
+                        </tr>
+
+
+                    </table>
+                    <input id="btn_dowload" style="background: #a3dfd4;
+                        height: 30px;" type="button" value="Export Data" onclick="Export()" />
+                </div>
+                <!-- <img src="images/chart.png" id="imgchart"> -->
+            </div>
+
+
+            <div class="clear"></div>
+
+
+        </section>
+
+        <section class="wapper2">
+            <span
+                style=" position: absolute;left: 5px;font-size: 12px; text-transform: uppercase;line-height: 20px;top:4px ">PROCESSING
+                :</span>
+            <div class="progress-bar">
+                <span class="bar">
+                    <span class="progress"></span>
+                </span>
+            </div>
+
+            <form style=" position: absolute; left: 320px ;top:2px;">
+
+                CONNECT: <input id="connect" class="on ledgarenal" type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                Client1_20_502 : <input id="Client1_20_502" class="on ledgarenal " type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                Client2_23_8000 : <input id="Client2_23_8000" class="on ledgarenal " type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                Client3_10_502: <input id="Client3_10_502" class="on ledgarenal " type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                Client4_46_502: <input id="Client4_46_502" class="on ledgarenal " type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                Client5_32_8000: <input id="Client5_32_8000" class="on ledgarenal " type="text"
+                    disabled />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                TIME UPDATE DATA: <input id="timedata" type="text" value="" disabled />
+
+            </form>
+        </section>
+        </section>
+
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            timer();
+        };
+
+        setInterval(timer, 1000);
+        function timer() {
+
+            var time = new Date();
+            var h = time.getHours();
+            var day = time.getDate();
+            var m = time.getMinutes();
+            var s = time.getSeconds();
+            var y = time.getFullYear();
+            var m = time.getMonth() + 1;
+            /*Hàm tính số ngày trong tháng javascript*/
+            const get_day_of_month = (year, month) => {
+                return new Date(year, month, 0).getDate();
+            };
+            let getdayinmonth = get_day_of_month(y,m);
+            // console.log(h+":"+m+":"+s);
+            if (day == getdayinmonth && h == 23 && m == 59 && s == 50) {
+                document.getElementById('btn_dowload').click();
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        var d = new Date();
+        var y = d.getFullYear();
+        var dd = d.getDate();
+        var m = d.getMonth() + 1;
+        var h = d.getHours();
+        var mm = d.getSeconds();
+        var url = y + "" + m + "" + dd;
+
+
+        function Export() {
+            $("#sheet0").table2excel({
+                filename: "Table" + url + ".xls",
+                preserveColors: true
+            });
+        }
+
+
+    </script>
+    <script type="text/javascript " src="js/chart.js"></script>
+    <script type="text/javascript " src="js/mqttws31.min.js "></script>
+    <script type="text/javascript " src="js/toggeled.js "></script>
+    <script type="text/javascript " src="library/mainsvg.js"></script>
+    <script type="text/javascript " src="js/index.js "></script>
+    <!-- <script type=" text/javascript " src="js/HMI-TANK.js "></script> -->
+
+
+    <script src="chart.js"></script>
+    <script src="js/table2excel.js" type="text/javascript"></script>
+
+</body>
+
+
+</html>

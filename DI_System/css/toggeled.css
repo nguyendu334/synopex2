@@ -1,0 +1,168 @@
+.sidebar-toggle-box {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  z-index: 9999;
+}
+.sidebar-toggle-box .fa-bars {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+}
+.sidebar-closed > #sidebar > ul {
+  display: none;
+}
+.sidebar-closed #main-content {
+  margin-left: 0;
+}
+.sidebar-closed #sidebar {
+  margin-left: -180px;
+}
+#sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  background: #2f323a;
+  z-index: 99999;
+}
+#sidebar h5 {
+  color: #f2f2f2;
+  font-weight: 700;
+}
+#sidebar ul li {
+  position: relative;
+}
+#sidebar .sub-menu > .sub li {
+  padding-left: 32px;
+}
+#sidebar .sub-menu > .sub li:last-child {
+  padding-bottom: 10px;
+}
+.nav-collapse.collapse {
+  display: inline;
+}
+ul.sidebar-menu,
+ul.sidebar-menu li ul.sub {
+  margin: -2px 0 0;
+  padding: 0;
+}
+#sidebar > ul > li > ul.sub {
+  display: none;
+}
+#sidebar > ul > li.active > ul.sub,
+#sidebar > ul > li > ul.sub > li > a {
+  display: block;
+}
+ul.sidebar-menu li ul.sub li {
+  background: #2f323a;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+ul.sidebar-menu li ul.sub li:last-child {
+  border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+}
+ul.sidebar-menu li ul.sub li a {
+  font-size: 12px;
+  padding: 6px 0;
+  line-height: 35px;
+  height: 35px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #aeb2b7;
+}
+ul.sidebar-menu li ul.sub li a:hover {
+  color: #fff;
+  background: 0 0;
+}
+ul.sidebar-menu li ul.sub li.active a {
+  color: #4ecdc4;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+}
+ul.sidebar-menu li {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+ul.sidebar-menu li.sub-menu {
+  line-height: 15px;
+}
+ul.sidebar-menu li a span {
+  display: inline-block;
+}
+ul.sidebar-menu li a {
+  color: #aeb2b7;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0 15px 10px;
+  font-size: 12px;
+  outline: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+ul.sidebar-menu li a.active,
+ul.sidebar-menu li a:focus,
+ul.sidebar-menu li a:hover {
+  background: #4ecdc4;
+  color: #fff;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+ul.sidebar-menu li a i {
+  font-size: 15px;
+  padding-right: 6px;
+}
+ul.sidebar-menu li a:focus i,
+ul.sidebar-menu li a:hover i {
+  color: #fff;
+}
+ul.sidebar-menu li a.active i {
+  color: #fff;
+}
+.mail-info,
+.mail-info:hover {
+  margin: -3px 6px 0 0;
+  font-size: 11px;
+}
+#nav-accordion {
+  display: none;
+}
+a.logo {
+  position: absolute;
+  font-size: 34px;
+  color: rgb(33 26 224);
+  text-transform: uppercase;
+  left: 60px;
+}
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+a.logo b {
+  font-weight: 900;
+}
+a.logo span {
+  color: rgb(243 183 3);  
+  background: url(https://24.media.tumblr.com/tumblr_m87dri70zh1qzla33o1_500.gif);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,168 @@
+#rawpumpA1 {
+  position: absolute;
+  z-index: 10;
+  top: 75px;
+  left: 47px;
+  width: 50px;
+  height: 30px; 
+   overflow: hidden;
+}
+#rawpumpC1 {
+  position: absolute;
+  z-index: 10;
+  top: 136px;
+  left: 47px;
+  width: 50px;
+  height: 30px;
+  overflow: hidden;
+}
+#rawpumpB1 {
+  position: absolute;
+  z-index: 10;
+  top: 201px;
+  left: 47px;
+  width: 50px;
+  height: 30px;
+  overflow: hidden;
+}
+#rawpumpA2 {
+  position: absolute;
+  z-index: 10;
+  top: 292px;
+  left: 47px;
+  width: 50px;
+  height: 30px;
+  overflow: hidden;
+}
+#rawpumpC2 {
+  position: absolute;
+  z-index: 10;
+  top: 354px;
+  left: 47px;
+  width: 50px;
+  height: 30px;
+  overflow: hidden;
+}
+#rawpumpB2 {
+  position: absolute;
+  z-index: 10;
+  top: 418px;
+  left: 47px;
+  width: 50px;
+  height: 30px;
+  overflow: hidden;
+}
+
+#ropressurepumpA1 {
+  position: absolute;
+  z-index: 10;
+  top: 51px;
+  left: 645px;
+  width: 50px;
+  height: 30px;
+}
+#ropressurepumpC1 {
+  position: absolute;
+  z-index: 10;
+  top: 111px;
+  left: 645px;
+  width: 50px;
+  height: 30px;
+}
+#ropressurepumpB1 {
+  position: absolute;
+  z-index: 10;
+  top: 172px;
+  left: 645px;
+  width: 50px;
+  height: 30px;
+}
+#ropressurepumpA2 {
+  position: absolute;
+  z-index: 10;
+  top: 260px;
+  left: 646px;
+  width: 50px;
+  height: 30px;
+}
+#ropressurepumpC2 {
+  position: absolute;
+  z-index: 10;
+  top: 330px;
+  left: 646px;
+  width: 50px;
+  height: 30px;
+}
+#ropressurepumpB2 {
+  position: absolute;
+  z-index: 10;
+  top: 400px;
+  left: 646px;
+  width: 50px;
+  height: 30px;
+}
+
+#ediwaterpumpTop1 {
+  position: absolute;
+  z-index: 10;
+  top: 532px;
+  left: 946px;
+  width: 50px;
+  height: 30px;
+}
+#ediwaterpumpTop2 {
+  position: absolute;
+  z-index: 10;
+  top: 579px;
+  left: 946px;
+  width: 50px;
+  height: 30px;
+}
+#ediwaterpumpTop3 {
+  position: absolute;
+  z-index: 10;
+  top: 625px;
+  left: 946px;
+  width: 50px;
+  height: 30px;
+}
+#ediwaterpumpBottom1 {
+  position: absolute;
+  z-index: 10;
+  top: 776px;
+  left: 935px;
+  width: 50px;
+  height: 30px;
+}
+#ediwaterpumpBottom2 {
+  position: absolute;
+  z-index: 10;
+  top: 821px;
+  left: 935px;
+  width: 50px;
+  height: 30px;
+}
+#ediwaterpumpBottom3 {
+  position: absolute;
+  z-index: 10;
+  top: 869px;
+  left: 935px;
+  width: 50px;
+  height: 30px;
+}
+#ro2ProductA {
+  position: absolute;
+  z-index: 10;
+  top: 480px;
+  left: 1351px;
+  width: 50px;
+  height: 30px;
+}
+#ro2ProductB {
+  position: absolute;
+  z-index: 10;
+  top: 573px;
+  left: 1351px;
+  width: 50px;
+  height: 30px;
+}

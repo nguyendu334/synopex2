@@ -1,0 +1,18 @@
+#layer1-7 {
+  animation: center 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#layer1-1 {
+  animation: center 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes center {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

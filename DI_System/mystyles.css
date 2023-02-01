@@ -1,0 +1,14 @@
+         #layer1{
+         animation: center 1s  infinite linear;
+         transform-origin: center ;
+         transform-box : fill-box;
+       }
+       @keyframes center{
+         from {
+            transform: rotateZ(0deg);
+         }
+         to{
+            transform: rotateZ(360deg);
+         }
+       }
+       
